@@ -6,7 +6,7 @@
 
 BMPImage *bmp_read(const char *filename)
 {
-    FILE *fp = fopen(filename, "r");
+    FILE *fp = fopen(filename, "rb");
     if (!fp) {
         printf("file %s open failed!\n", filename);
         goto OPEN_FAIL;
